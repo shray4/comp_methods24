@@ -63,10 +63,10 @@ Evolve a binary through merger using PN equations and a NR remnant surrogate!
 Required Installation Process:
 - install Julia via `curl -fsSL https://install.julialang.org | sh`
 - create a mcfacts-dev conda environment via `make setup` in your McFACTS repository
-- activate the mcfacts-dev conda environment
 - install `sxs` via `conda install -c conda-forge sxs numba::numba numba::llvmlite`
-- install the other dependencies in `requirements.txt` with `conda`
-- download `surrogate.joblib` from [this Google Drive](https://www.dropbox.com/scl/fo/p33rqfjew5vu5qzksu32w/AEr4moWujITfl46ezybjE1Q?rlkey=1lladw82d8twlpt2xi5hidscv&st=xctpnkyj&dl=0) and place in the following directory `src/mcfacts/external/evolve_binary/`
+- `conda install joblib==1.4.2 quaternionic==1.0.13`
+- `pip install juliacall==0.9.20 scikit_learn==1.5.2 sxs==2024.0.22 uncertainties==3.2.2`
+- - download `surrogate.joblib` from [this Google Drive](https://www.dropbox.com/scl/fo/p33rqfjew5vu5qzksu32w/AEr4moWujITfl46ezybjE1Q?rlkey=1lladw82d8twlpt2xi5hidscv&st=xctpnkyj&dl=0) and place in the following directory `src/mcfacts/external/evolve_binary/`
 
 
 Now all that's left to do is run McFACTS with the new kick velocity model!
