@@ -4,7 +4,7 @@
 import juliacall
 import numpy as np
 import fit_modeler
-import mcfacts.external.evolve_binary as evolve_binary
+import evolve_binary
 import pandas as pd
 import time
 import surrogate
