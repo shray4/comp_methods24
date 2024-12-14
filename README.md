@@ -63,7 +63,6 @@ Evolve a binary through merger using PN equations and a NR remnant surrogate!
 Required Installation Process:
 - install Julia via `curl -fsSL https://install.julialang.org | sh`
 - create a mcfacts-dev conda environment via `make setup` in your McFACTS repository
-  - but change the Makefile so you install python=3.12.0
 - activate the mcfacts-dev conda environment
 - install `sxs` via `conda install -c conda-forge sxs numba::numba numba::llvmlite`
 - install the other dependencies in `requirements.txt` with `conda`
