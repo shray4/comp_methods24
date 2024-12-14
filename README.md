@@ -33,7 +33,7 @@ The latest development version is available directly from my [GitHub Repo](https
 
 ```
     git clone https://github.com/shray4/comp_methods24
-    cd test_mcfacts
+    cd comp_methods24
 ```
 Next, we recommend that you create a Conda environment for working with McFACTS.
 You can do this by running
@@ -67,8 +67,7 @@ Required Installation Process:
 - activate the mcfacts-dev conda environment
 - install `sxs` via `conda install -c conda-forge sxs numba::numba numba::llvmlite`
 - install the other dependencies in `requirements.txt` with `conda`
-- download `surrogate.joblib` from [this Google Drive](https://www.dropbox.com/scl/fo/p33rqfjew5vu5qzksu32w/AEr4moWujITfl46ezybjE1Q?rlkey=1lladw82d8twlpt2xi5hidscv&st=xctpnkyj&dl=0)
-- try running `python example.py` (ane make sure `surrogate.joblib` is in this directory)
+- download `surrogate.joblib` from [this Google Drive](https://www.dropbox.com/scl/fo/p33rqfjew5vu5qzksu32w/AEr4moWujITfl46ezybjE1Q?rlkey=1lladw82d8twlpt2xi5hidscv&st=xctpnkyj&dl=0) and place in the following directory `src/mcfacts/external/evolve_binary/`
 
 
 Now all that's left to do is run McFACTS with the new kick velocity model!
@@ -76,5 +75,7 @@ Now all that's left to do is run McFACTS with the new kick velocity model!
 ```
     make plots
     python removing_hash.py
+    cd src/mcfacts/external/evolve_binary
     python evolving_mcfacts.py
 ```
+The outputs you should expect to generate can be seen in `src/mcfacts/external/evolve_binary/evolving_mcfacts.ipynb` which can also be run in case of issues with installation and running of main python file.
