@@ -76,6 +76,6 @@ Now all that's left to do is run McFACTS with the new kick velocity model!
     make plots
     python removing_hash.py
     cd src/mcfacts/external/evolve_binary
-    python evolving_mcfacts.py
+    python evolve_mcfacts.py
 ```
-The outputs you should expect to generate can be seen in `src/mcfacts/external/evolve_binary/evolving_mcfacts.ipynb` which can also be run in case of issues with installation and running of main python file.
+The outputs you should expect to generate can be seen in `src/mcfacts/external/evolve_binary/evolve_mcfacts.ipynb` which can also be run in case of issues with installation and running of main python file.
